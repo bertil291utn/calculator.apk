@@ -1,3 +1,4 @@
+
 // This optional code is used to register a service worker.
 // register() is not called by default.
 
@@ -70,8 +71,8 @@ function registerValidSW(swUrl, config) {
               // but the previous service worker will still serve the older
               // content until all client tabs are closed.
               console.log(
-                'New content is available and will be used when all ' +
-                  'tabs for this page are closed. See https://bit.ly/CRA-PWA.'
+                'New content is available and will be used when all '
+                + 'tabs for this page are closed. See https://bit.ly/CRA-PWA.'
               );
 
               // Execute callback
