@@ -23,9 +23,9 @@ yarn-debug.log*
 yarn-error.log*
 
 # hidden local files
-src/App.css
+# src/App.css
 src/App.test.js
-src/logo.svg
+# src/logo.svg
 src/serviceWorker.js
 src/setupTests.js
 .stylelintrc.json
