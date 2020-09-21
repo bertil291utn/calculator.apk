@@ -30,5 +30,6 @@ src/App.test.js
 # src/setupTests.js
 .stylelintrc.json
 .eslintrc.json
+public/
 
 README copy.md
