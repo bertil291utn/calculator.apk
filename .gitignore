@@ -26,7 +26,7 @@ yarn-error.log*
 # src/App.css
 src/App.test.js
 # src/logo.svg
-src/serviceWorker.js
-src/setupTests.js
+# src/serviceWorker.js
+# src/setupTests.js
 .stylelintrc.json
 .eslintrc.json
