@@ -29,7 +29,7 @@ const ButtonPanel = () => (
       <Button name="+" orange />
     </div>
     <div className="buttonsGroupStyle g-5">
-      <Button name="0" wider />
+      <Button name="0" wide />
       <Button name="." />
       <Button name="=" orange />
     </div>

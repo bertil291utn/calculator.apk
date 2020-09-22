@@ -6,6 +6,7 @@
 
 .button-content {
   background-color: #e0e0e0;
+  cursor: pointer;
   font-size: 20px;
   font-weight: 400;
   flex: 1 0 auto;
