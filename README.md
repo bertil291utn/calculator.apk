@@ -11,25 +11,24 @@
 - HTML5
 - CSS
 
-## Live Demo
-
-
-
 
 ## Getting Started
 
 In order to start with this project you need the next:
 
 1. Get a copy of this project [this repository :blue_book:](https://github.com/bertil291utn/calculator.apk.git)
-
-Once you have clone this project
-  1. Go to folder project 
-  2. Look for the `index.html` file and open in your browser
+2. Runs the app in the development mode.<br />
+  ```
+  npm run start
+  ```
+3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  The page will reload if you make edits.<br />
+  You will also see any lint errors in the console.
 
 
 ## Deployment
 
-Deployed on [Heroku](https://pages.github.com/)  
+Deployed on [Heroku](https://www.heroku.com/)  
 
 
 ## Author
