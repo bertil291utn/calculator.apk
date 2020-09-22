@@ -31,13 +31,6 @@ Once you have clone this project
 
 Deployed on [Heroku](https://pages.github.com/)  
 
-## Improvements
-
-Features we are going to add to this app:
-- Save on local storage or use a cloud server to save our books
-- Add an icon (bookmark) :bookmark: to know that a book has been read
-- Add a pop up form to add a new book 
-- Display a error/completed messages
 
 ## Author
 
