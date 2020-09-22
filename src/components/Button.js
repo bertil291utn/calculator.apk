@@ -1,21 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Button.css'
 
 const Button = props => {
-  const { name } = props;
+  const { name, orange, wider } = props;
+  let widerInitialVal = 'button-container'
+  const widerClass = wider ? (widerInitialVal += ' wider') : widerInitialVal;
+  let orangeInitialVal = 'button-content'
+  const orangeClass = orange ? (orangeInitialVal += ' orange') : orangeInitialVal;
   return (
-    <button type="button">
-      {name}
-    </button>
+    <div className={widerClass}>
+      <button type="button" className={orangeClass}>
+        {name}
+      </button>
+    </div >
   );
 };
 
 Button.propTypes = {
-  name: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  orange: PropTypes.bool,
+  wider: PropTypes.bool,
 };
 
 Button.defaultProps = {
-  name: 'my-Button',
+  orange: false,
+  wider: false,
 };
 
 export default Button;

@@ -1,0 +1,22 @@
+.button-container {
+  display: inline-flex;
+  width: 25%;
+  flex: 1 0 auto;
+}
+
+.button-content {
+  background-color: #e0e0e0;
+  font-size: 20px;
+  font-weight: 400;
+  flex: 1 0 auto;
+  padding: 0;
+  border: 1px solid;
+}
+
+.orange {
+  background-color: #f5923e;
+}
+
+.wider {
+  width: 50%;
+}
