@@ -1,0 +1,16 @@
+.display-component {
+  background-color: #858694;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: right;
+  height: 100px;
+  width: 100%;
+}
+
+.display-container {
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 600;
+  padding: 1rem;
+}
