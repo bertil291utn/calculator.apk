@@ -1,39 +1,45 @@
+/* eslint-disable max-len */
 import React from 'react';
 import Button from './Button';
 import './ButtonPanel.css';
 
-const ButtonPanel = () => (
-  <div className="component-button-panel">
-    <div className="buttonsGroupStyle g-1">
-      <Button name="AC" />
-      <Button name="+/-" />
-      <Button name="%" />
-      <Button name="÷" orange />
+const ButtonPanel = () => {
+  const buttonPanel = [
+    {
+      group: 'g-1',
+      buttons: ['AC', '+/-', '%', '÷'],
+    },
+    {
+      group: 'g-2',
+      buttons: ['7', '8', '9', 'X'],
+    },
+    {
+      group: 'g-3',
+      buttons: ['4', '5', '6', '-'],
+    },
+    {
+      group: 'g-4',
+      buttons: ['1', '2', '3', '+'],
+    },
+    {
+      group: 'g-5',
+      buttons: ['0', '.', '='],
+    },
+  ];
+
+  return (
+    <div className="component-button-panel">
+      {buttonPanel.map(elem => (
+        <div key={elem.group} className={`buttonsGroupStyle ${elem.group}`}>
+          {elem.buttons.map((nextElem, index) => {
+            if (index === elem.buttons.length - 1) return <Button key={nextElem} name={nextElem} orange />;
+            if (nextElem === '0') return <Button key={nextElem} name={nextElem} wide />;
+            return <Button key={nextElem} name={nextElem} />;
+          })}
+        </div>
+      ))}
     </div>
-    <div className="buttonsGroupStyle g-2">
-      <Button name="7" />
-      <Button name="8" />
-      <Button name="9" />
-      <Button name="X" orange />
-    </div>
-    <div className="buttonsGroupStyle g-3">
-      <Button name="4" />
-      <Button name="5" />
-      <Button name="6" />
-      <Button name="-" orange />
-    </div>
-    <div className="buttonsGroupStyle g-4">
-      <Button name="1" />
-      <Button name="2" />
-      <Button name="3" />
-      <Button name="+" orange />
-    </div>
-    <div className="buttonsGroupStyle g-5">
-      <Button name="0" wide />
-      <Button name="." />
-      <Button name="=" orange />
-    </div>
-  </div>
-);
+  );
+};
 
 export default ButtonPanel;
