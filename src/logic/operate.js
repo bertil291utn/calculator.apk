@@ -16,7 +16,6 @@ const operate = (numberOne, numberTwo, operation) => {
       returnVal = numberOneLocal.times(numberTwoLocal);
       break;
     case '÷':
-      // if (numberTwoLocal === 0) { returnVal = 'No divisible para cero'; break; }
       returnVal = numberOneLocal.div(numberTwoLocal);
       break;
     default:
