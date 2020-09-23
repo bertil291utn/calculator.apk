@@ -2,7 +2,7 @@
 
 ### Calculator for Math-magicians Inc using create-react-app, a tool built by developers at Facebook to help you build React applications, saving you from time-consuming setup and configuration.
 
-<div align="center"><img src="https://cdn.filestackcontent.com/5yWSAa6fS8SOwVZBOSad" alt="image" width="400" /></div>
+[<div align="center"><img src="https://cdn.filestackcontent.com/5yWSAa6fS8SOwVZBOSad" alt="image" width="400" /></div>](https://calculator-apk.herokuapp.com/)
 
 
 ## Built With 
