@@ -1,7 +1,7 @@
 import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
-  const numberOneLocal = Big(numberOne);
+  const numberOneLocal = numberOne && Big(numberOne);
   const numberTwoLocal = Big(numberTwo);
   let returnVal = '';
 
@@ -16,10 +16,15 @@ const operate = (numberOne, numberTwo, operation) => {
       returnVal = numberOneLocal.times(numberTwoLocal);
       break;
     case '÷':
+      if (numberTwo === '0') { returnVal = 'Cannot divide by zero'; break; }
       returnVal = numberOneLocal.div(numberTwoLocal);
       break;
     default:
-      returnVal = numberOneLocal.div(100);
+      if (numberOneLocal === null) {
+        returnVal = numberTwoLocal.times(0.01);
+        break;
+      }
+      returnVal = numberOneLocal.times(numberTwoLocal.times(0.01));
       break;
   }
   return returnVal.toString();
