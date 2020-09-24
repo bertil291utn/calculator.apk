@@ -1,9 +1,10 @@
 /* eslint-disable max-len */
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from './Button';
 import './ButtonPanel.css';
 
-const ButtonPanel = () => {
+const ButtonPanel = ({ handleClick }) => {
   const buttonPanel = [
     {
       group: 'g-1',
@@ -32,9 +33,9 @@ const ButtonPanel = () => {
       {buttonPanel.map(elem => (
         <div key={elem.group} className={`buttonsGroupStyle ${elem.group}`}>
           {elem.buttons.map((nextElem, index) => {
-            if (index === elem.buttons.length - 1) return <Button key={nextElem} name={nextElem} orange />;
-            if (nextElem === '0') return <Button key={nextElem} name={nextElem} wide />;
-            return <Button key={nextElem} name={nextElem} />;
+            if (index === elem.buttons.length - 1) return <Button key={nextElem} name={nextElem} orange handleClick={handleClick} />;
+            if (nextElem === '0') return <Button key={nextElem} name={nextElem} wide handleClick={handleClick} />;
+            return <Button key={nextElem} name={nextElem} handleClick={handleClick} />;
           })}
         </div>
       ))}
@@ -42,4 +43,7 @@ const ButtonPanel = () => {
   );
 };
 
+ButtonPanel.propTypes = {
+  handleClick: PropTypes.func.isRequired,
+};
 export default ButtonPanel;
