@@ -22,9 +22,10 @@ class App extends Component {
 
   render() {
     const { total, next, operation } = this.state;
+    const displayValue = `${total}${operation}${next}`.replace(/null/g, '');
     return (
       <div className="App">
-        <Display value={`${total}${operation}${next}`.replace(/null/g, '')} />
+        <Display value={displayValue || undefined} />
         <ButtonPanel handleClick={this.handleClick} />
       </div>
     );
