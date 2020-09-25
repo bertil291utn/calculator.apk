@@ -4,6 +4,7 @@
 
 [<div align="center"><img src="https://cdn.filestackcontent.com/5yWSAa6fS8SOwVZBOSad" alt="image" width="400" /></div>](https://calculator-apk.herokuapp.com/)
 
+*Click on the image to go to live demo*
 
 ## Built With 
 
